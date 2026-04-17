@@ -1,10 +1,10 @@
 class TaskManager {
-
+    
     constructor(column) {
         this.column = column;
-        this.addBtn = null;
-        this.cancelBtn = null;
         this.getUserTask = null;
+        this.cancelBtn = null;
+        this.addBtn = null;
     }
 
     getUserData() {
@@ -61,7 +61,7 @@ class TaskManager {
             document.querySelector(".containerofgetUserTask").remove();
         });
     }
-    
+
 }
 
 export default TaskManager;
