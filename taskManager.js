@@ -45,7 +45,7 @@ class TaskManager {
             }
         });
 
-        this.addBtn.addEventListener('keypress', (event) => {
+        this.getUserTask.addEventListener('keydown', (event) => {
             if (event.key === "Enter") {
                 this.addBtn.click();
             }
