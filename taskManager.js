@@ -16,6 +16,10 @@ class TaskManager {
         this.getUserTask.setAttribute("type", "text");
         this.getUserTask.setAttribute("placeholder", "Enter Your Task");
 
+        setTimeout(() => {
+            this.getUserTask.focus();
+        }, 0);
+
         const addBtn = document.createElement('button');
         this.addBtn = addBtn;
         this.addBtn.classList.add("addBtnOfGetUserTask");
@@ -57,7 +61,7 @@ class TaskManager {
             document.querySelector(".containerofgetUserTask").remove();
         });
     }
-
+    
 }
 
 export default TaskManager;
