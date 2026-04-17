@@ -7,6 +7,7 @@ class TaskManager {
         this.addBtn = null;
     }
 
+
     getUserData() {
         const containerofgetUserTask = document.createElement("div");
         containerofgetUserTask.classList.add("containerofgetUserTask");
@@ -36,7 +37,9 @@ class TaskManager {
         document.body.appendChild(containerofgetUserTask);
     }
 
+
     addBtnofData() {
+
         this.addBtn.addEventListener("click", () => {
             const taskValue = this.getUserTask.value;
             if (taskValue.trim() !== "") {
@@ -48,6 +51,7 @@ class TaskManager {
                 document.querySelector(".containerofgetUserTask").remove();
             }
         });
+
         this.getUserTask.addEventListener('keydown', (event) => {
             if (event.key === "Enter") {
                 this.addBtn.click();
