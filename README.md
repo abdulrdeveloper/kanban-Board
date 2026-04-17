@@ -69,4 +69,4 @@ closestDiv.appendChild(dragDiv);
 ✅ How drag-and-drop works  
 ✅ How to manipulate the DOM  
 
-**Happy Coding!** 💻
+**Enjoy Coding!** 💻
