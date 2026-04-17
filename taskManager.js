@@ -1,5 +1,5 @@
 class TaskManager {
-    
+
     constructor(column) {
         this.column = column;
         this.getUserTask = null;
@@ -37,18 +37,17 @@ class TaskManager {
     }
 
     addBtnofData() {
-
         this.addBtn.addEventListener("click", () => {
             const taskValue = this.getUserTask.value;
             if (taskValue.trim() !== "") {
                 const task = document.createElement("div");
                 task.classList.add("task");
                 task.textContent = taskValue;
+                task.setAttribute("draggable", true);
                 this.column.querySelector(".tasks").appendChild(task);
                 document.querySelector(".containerofgetUserTask").remove();
             }
         });
-
         this.getUserTask.addEventListener('keydown', (event) => {
             if (event.key === "Enter") {
                 this.addBtn.click();
